@@ -25,7 +25,7 @@ Async: TypeAlias = Awaitable[T]
 Lifter: TypeAlias = Callable[[FilterFn[P, RetT]],
                              FilterFn[NewP, RetT]]
 
-ApplicableFilter: TypeAlias = 'Filter[[T], RetT]'
+ApplicableFilter: TypeAlias = FilterFn[[T], RetT]
 
 class LifterWrapper(Generic[P, RetT, NewP]):
     __slots__ = "lifter",
