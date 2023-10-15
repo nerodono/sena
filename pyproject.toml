@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "sena"
+version = "0.1.0"
+description = ""
+authors = ["Nero <nerodono0@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.6.0"
+typing-protocol-intersection = "^0.3.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
