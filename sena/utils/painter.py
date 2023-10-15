@@ -52,5 +52,5 @@ class _RedPainter:
 
 red = _RedPainter()
 
-def is_awaitable_erased(obj: Any, _: Any) -> TypeGuard[Awaitable[bool]]:
+def is_awaitable_erased(obj: Any) -> TypeGuard[Awaitable[bool]]:
     return iscoroutine(obj)
